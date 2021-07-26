@@ -11,7 +11,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://dusign.net       # Note: don't forget to modify the CNAME file to your url
+url: https://jasongao.github.io      # Note: don't forget to modify the CNAME file to your url
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -28,10 +28,10 @@ signature: true #show signature
 signature-img: img/signature/dusign.png
 
 # SNS settings
-github_username:    dusign
-twitter_username:   dusignr
-facebook_username:  Gang Du
-zhihu_username: dusignr
+github_username: jasongao1995
+#twitter_username:   dusignr
+#facebook_username:  Gang Du
+#zhihu_username: jaosngao1995
 
 # Build settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
