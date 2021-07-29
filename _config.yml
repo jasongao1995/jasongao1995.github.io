@@ -6,7 +6,7 @@
 title: Jasongao's blog
 subtitle: record something
 author: Jason
-language: en
+language: zh-CN
 timezone:
 
 # URL
@@ -46,13 +46,12 @@ ga_domain: yoursite
 
 # Sidebar settings
 sidebar: true                      # whether or not using Sidebar.
-sidebar-about-description: "Welcome to visit, I'm Dusign!"
+sidebar-about-description: "Welcome to visit!"
 sidebar-avatar: img/ironman-draw.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 widgets:
 - search
 - featured-tags
 - short-about
-- visitor
 - recent-posts
 - friends-blog
 - archive
@@ -77,21 +76,21 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 
 ## Friends
-friends: [
-    {
-        title: "Dusign's Blog",
-        href: "https://blog.csdn.net/d_Nail"
-    },{
-        title: "Dusign's Web",
-        href: "#"
-    },{
-        title: "Dusign's Github",
-        href: "https://github.com/dusign"
-    },{
-        title: "Other",
-        href: "#"
-    }
-]
+#friends: [
+#    {
+#        title: "Dusign's Blog",
+#        href: "https://blog.csdn.net/d_Nail"
+#    },{
+#        title: "Dusign's Web",
+#        href: "#"
+#    },{
+#        title: "Dusign's Github",
+#        href: "https://github.com/dusign"
+#    },{
+#        title: "Other",
+#        href: "#"
+#    }
+#]
 
 math:
   enable: true
@@ -239,11 +238,11 @@ color_theme: light
 mouse_control: false
 
 # Visitor statistics
-visitor:
-  enable: true
-  type:
+#visitor:
+#  enable: false
+#  type:
 
 # Chinese Blog
 chinese_blog:
-  enable: true
+  enable: false
   url: https://blog.csdn.net/d_Nail
