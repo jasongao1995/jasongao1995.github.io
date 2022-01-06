@@ -32,7 +32,7 @@ signature-img: img/signature/dusign.png
 github_username: jasongao1995
 #twitter_username:   jaosngao1995
 #facebook_username:  jaosngao1995
-#zhihu_username: jaosngao1995111
+#zhihu_username: jaosngao199511111
 
 # Build settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
