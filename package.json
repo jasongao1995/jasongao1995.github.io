@@ -9,7 +9,7 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "4.2.1"
+    "version": "4.0.0"
   },
   "dependencies": {
     "hexo": "^4.0.0",
@@ -27,7 +27,6 @@
     "hexo-renderer-mathjax": "^0.6.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
-    "hexo-util": "^2.5.0",
     "hexo-wordcount": "^6.0.1"
   }
 }
