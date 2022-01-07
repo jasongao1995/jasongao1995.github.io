@@ -1,4 +1,4 @@
-sudo: false
+sudo: true
 language: node_js
 node_js:
   - 16 # use nodejs v10 LTS
@@ -11,7 +11,8 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $GH_TOKEN
+  github-token: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDMn01YPej+dOH8G1nnIO2Zi2Lq9HmkDNSG2LswnAqfE6NBF19iBRiOnqYq5eVG1vy5e6z9gxLxyR1r17EI0aO10AY8dKM5X+0ITIGtgn++0491Q05Iqe38Oy+OnalUJkaAHIMFK2waJAtk9olYBbIeZxgl9Oz0zKug9d2FgHLDg/DMJQU2YkYIflsMkktUhX5QGAV9nIQtnjjtJsd36U5i9XIncShm8yQZRWQYpqSJFnczph7/QwmTUsVFo7ZAvwlx6jCfmY5gXoUiBXlvJxRymO/6kspLoN5pod1a69El+J0tPePdvP3EJlRRVOvwY2myTBMALGVcKvVsdFXny7AvGcs4eZcC77dDEOqYXbVtqcxlt1hf/45I3LwEM2Emtf8wLoKQl3AIn+7/M+2Oz6aAbcT7vxncQzbc2kOHnXxin3RlYTIqv8khW94AsfN6zJxnKFHBR812C/6eKjZ1FwnNZsy6ITG2B/LiUyPaWlQmzcWS2hP9NUDnHgKkC/SXlf8= DELL@DESKTOP-Q892JSJ
+
   keep-history: true
   on:
     branch: master
