@@ -25,34 +25,10 @@ class Musics {
     constructor() {
         this.songs = [{
                 id: 1,
-                title: '把孤独当作晚餐',
-                singer: '范茹',
-                songUrl: '/music/song/把孤独当作晚餐.mp3',
+                title: '弱水三千',
+                singer: '周传雄',
+                songUrl: '/music/song/周传雄 - 弱水三千.mp3',
                 imageUrl: '/music/img/把孤独当作晚餐.jpg'
-            },{
-                id: 2,
-                title: 'Home',
-                singer: '王诗安',
-                songUrl: '/music/song/Home_王诗安.mp3',
-                imageUrl: '/music/img/home.jpg'
-            },{
-                id: 3,
-                title: 'Stupid',
-                singer: 'Tone Damli',
-                songUrl: '/music/song/Stupid_Tone Damli.mp3',
-                imageUrl: '/music/img/stupid.jpg'
-            },{
-                id: 4,
-                title: '九张机',
-                singer: '叶炫清',
-                songUrl: '/music/song/九张机_叶炫清.mp3',
-                imageUrl: '/music/img/九张机.jpg'
-            },{
-                id: 5,
-                title: '不醉不会',
-                singer: '田馥甄',
-                songUrl: '/music/song/不醉不会_田馥甄.mp3',
-                imageUrl: '/music/img/不醉不会.jpg'
             }
         ]
     }
