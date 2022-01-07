@@ -11,7 +11,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://jasongao1995.github.io/jasongao1995     # Note: don't forget to modify the CNAME file to your url
+url: https://jasongao1995.github.io     # Note: don't forget to modify the CNAME file to your url
 #url: https://joyce.show
 root: /
 permalink: :year/:month/:day/:title/
