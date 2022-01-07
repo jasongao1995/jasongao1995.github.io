@@ -6,14 +6,14 @@
 title: Jasongao's blog
 subtitle: record something
 author: Jason
-language: zh-CN
+language: en
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://jasongao1995.github.io/jasongao1995     # Note: don't forget to modify the CNAME file to your url
 #url: https://joyce.show
-root: /jasongao1995
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -201,7 +201,10 @@ comment:
     username:
 
 ## music
-music: true
+music:
+  enable: true
+  library: netease
+  music: https://kg.qq.com/node/play?s=7deFpz7Z26Jmv7di&g_f=share_html
 
 # Tip
 tip:
@@ -245,4 +248,4 @@ visitor:
 # Chinese Blog
 chinese_blog:
   enable: false
-  url: https://blog.csdn.net/d_Nail
+  url: http://baidu.com
