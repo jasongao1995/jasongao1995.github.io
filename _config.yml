@@ -20,7 +20,7 @@ permalink_defaults:
 #Custom Setting Start
 
 # Site settings
-SEOTitle: Hexo-theme-snail
+SEOTitle: Jasongao's blog
 email: hexo-theme-snail@mail.com
 description: "A hexo theme"
 keyword: "dusign, hexo-theme-snail"
@@ -247,5 +247,5 @@ visitor:
 
 # Chinese Blog
 chinese_blog:
-  enable: false
+  enable: true
   url: http://baidu.com
