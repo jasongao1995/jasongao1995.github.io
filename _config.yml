@@ -110,7 +110,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :year-:month-:day-:title.md # File name of new posts
+new_post_name: :year-:month-:day-:title # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
@@ -189,11 +189,11 @@ share: true
 ## gitment url: https://github.com/imsun/gitment
 comment:
   gitment:
-    enable: false
-    owner:
-    repo:
-    client_id:
-    client_secret:
+    enable: true
+    owner: jasongao1995
+    repo: git@github.com:jasongao1995/comment.git
+    client_id: e6e519847a6f5923e203
+    client_secret: 64828144996c0e1676130feeed0a2559a4fcd50f
   livere:
     enable: false
   disqus:
@@ -226,10 +226,11 @@ bg_effects:
     count: 99
   mouse_click:
     enable: true
-    content: '"🌱","just do it","🍀"'
+    content: '"🌱","just do it","🍀","❀"'
     color: '"rgb(121,93,179)"
           ,"rgb(76,180,231)"
-          ,"rgb(184,90,154)"'
+          ,"rgb(184,90,154)"
+          ,"rgb(255,0,0)"'
   wave:
     enable: true
 
