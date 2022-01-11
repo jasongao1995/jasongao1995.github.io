@@ -112,6 +112,8 @@
                     <div class="post-heading">
                         <div class="tags">
                             
+                              <a class="tag" href="/tags/#java" title="java">java</a>
+                            
                         </div>
                         <h1>微服务搭建</h1>
                         <h2 class="subheading"></h2>
@@ -173,7 +175,7 @@
 
                         
                         <li>
-                            <a href="/categories/">Categories</a>
+                            <a href="/about/">About</a>
                         </li>
                         
                     
@@ -187,7 +189,7 @@
 
                         
                         <li>
-                            <a href="/about/">About</a>
+                            <a href="/categories/">Categories</a>
                         </li>
                         
                     
@@ -369,6 +371,74 @@
 
                 <!-- gitment start -->
                 
+                <hr>
+                <div id="blog_comments"></div>
+
+<!--
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+-->
+<!--
+<link rel="stylesheet" href="/css/gitment.css">
+<script type="text/javascript" src="/js/gitment.js"></script>
+-->
+
+<script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css"/>
+
+<!--
+<link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
+<script src="https://billts.site/js/gitment.js"></script>
+-->
+
+<script>
+const myTheme = {
+  render(state, instance) {
+    const container = document.createElement('div')
+    container.lang = "en-US"
+    container.className = 'gitment-container gitment-root-container'
+    
+     // your custom component
+    container.appendChild(instance.renderSomething(state, instance))
+    
+    container.appendChild(instance.renderHeader(state, instance))
+    container.appendChild(instance.renderComments(state, instance))
+    container.appendChild(instance.renderEditor(state, instance))
+    //container.appendChild(instance.renderFooter(state, instance))
+    return container
+  },
+  renderSomething(state, instance) {
+    const container = document.createElement('div')
+    container.lang = "en-US"
+    container.className = 'hello_visitor'
+    if (state.user.login) {
+      container.innerText = `Hello ${state.user.login}, Welcome to comment system`
+    }
+    return container
+  }
+}
+
+
+const gitment = new Gitment({
+    id: 'Sat Oct 23 2021 14:49:14 GMT+0000', // optional
+    owner: "jasongao1995",
+    repo: "git@github.com:jasongao1995/comment.git",
+    oauth: {
+      client_id: "e6e519847a6f5923e203",
+      client_secret: "64828144996c0e1676130feeed0a2559a4fcd50f",
+    },
+    theme: myTheme,
+    // ...
+    // For more available options, check out the documentation below
+  })
+  
+  gitment.render('blog_comments')
+  // or
+  // gitment.render(document.getElementById('comments'))
+  // or
+  // document.body.appendChild(gitment.render())
+</script>
+                
                 <!-- gitment end -->
 
                 <!-- 来必力City版安装代码 -->
@@ -408,6 +478,8 @@
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
+                          <a class="tag" href="/tags/#java" title="java">java</a>
+                        
                     </div>
                 </section>
                 
@@ -619,7 +691,7 @@
         
 
         
-            <script type="text/javascript" src="/js/mouse-click.js" content='[&quot;🌱&quot;,&quot;just do it&quot;,&quot;🍀&quot;]' color='[&quot;rgb(121,93,179)&quot; ,&quot;rgb(76,180,231)&quot; ,&quot;rgb(184,90,154)&quot;]'></script>
+            <script type="text/javascript" src="/js/mouse-click.js" content='[&quot;🌱&quot;,&quot;just do it&quot;,&quot;🍀&quot;,&quot;❀&quot;]' color='[&quot;rgb(121,93,179)&quot; ,&quot;rgb(76,180,231)&quot; ,&quot;rgb(184,90,154)&quot; ,&quot;rgb(255,0,0)&quot;]'></script>
         
 
         <!-- background effects end -->
