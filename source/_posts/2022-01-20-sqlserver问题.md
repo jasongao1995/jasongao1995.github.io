@@ -9,9 +9,9 @@ tocnum: true
 date: 2022-01-20 10:52:09
 subtitle:
 tags:
-- sql
+- 技术归纳
 categories:
-- sql
+- 技术归纳
 ---
 
 在执行create database test后，报错Could not obtain exclusive lock on database 'model'. Retry the operation later.。
