@@ -16,11 +16,11 @@
     <!--<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
     <title>
         
-          微服务搭建 - Jasongao&#39;s blog
+          事务 - Jasongao&#39;s blog
         
     </title>
 
-    <link rel="canonical" href="https://jasongao1995.github.io/2021/10/23/微服务搭建/">
+    <link rel="canonical" href="https://jasongao1995.github.io/2022/01/21/事务/">
 
     <!-- Bootstrap Core CSS -->
     
@@ -115,11 +115,11 @@
                               <a class="tag" href="/tags/#技术归纳" title="技术归纳">技术归纳</a>
                             
                         </div>
-                        <h1>微服务搭建</h1>
+                        <h1>事务</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by Jason on
-                            2021-10-23
+                            2022-01-21
                         </span>
 
                         
@@ -262,19 +262,20 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h2 id="微服务搭建"><a href="#微服务搭建" class="headerlink" title="微服务搭建"></a>微服务搭建</h2>
+                <p>开始spring事务的方式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">  @Autowired</span><br><span class="line">    private DataSourceTransactionManager transactionManager;</span><br><span class="line"></span><br><span class="line">    DefaultTransactionDefinition def &#x3D; new DefaultTransactionDefinition();</span><br><span class="line">&#x2F;&#x2F; 事物隔离级别，开启新事务</span><br><span class="line">        def.setPropagationBehavior(TransactionDefinition.PROPAGATION_REQUIRES_NEW);</span><br><span class="line">&#x2F;&#x2F; 获得事务状态</span><br><span class="line">        TransactionStatus status &#x3D; transactionManager.getTransaction(def);</span><br><span class="line">        try &#123;</span><br><span class="line">            &#x2F;&#x2F;业务代码</span><br><span class="line">            transactionManager.commit(status);</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            transactionManager.rollback(status);</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure><br>第二种方式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">@Autowired</span><br><span class="line">    private TransactionTemplate transactionTemplate;</span><br><span class="line"></span><br><span class="line">transactionTemplate.execute(new TransactionCallback&lt;Integer&gt;() &#123;</span><br><span class="line">            @Override</span><br><span class="line">            public Integer doInTransaction(TransactionStatus transactionStatus) &#123;</span><br><span class="line">                try &#123;</span><br><span class="line">                    Integer ttId &#x3D; saveTradeTicket(ttdto);</span><br><span class="line">                    saveTTSubInfo(ttId, ttdto, ttKernelDTO);</span><br><span class="line">                    return ttId;</span><br><span class="line">                &#125; catch (Exception e) &#123;</span><br><span class="line">                    transactionStatus.setRollbackOnly();</span><br><span class="line">                    throw new BusinessException(ResultCodeEnum.TT_FAIL);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure></p>
+
                 
                 <hr>
                 <!-- Pager -->
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2022/01/07/blob/" data-toggle="tooltip" data-placement="top" title="微软blob存储使用">&larr; Previous Post</a>
+                        <a href="/2022/03/01/笔记/" data-toggle="tooltip" data-placement="top" title="笔记">&larr; Previous Post</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/2021/07/27/多线程/" data-toggle="tooltip" data-placement="top" title="多线程">Next Post &rarr;</a>
+                        <a href="/2022/01/20/sqlserver问题/" data-toggle="tooltip" data-placement="top" title="sqlserver问题">Next Post &rarr;</a>
                     </li>
                     
                 </ul>
@@ -418,7 +419,7 @@ const myTheme = {
 
 
 const gitment = new Gitment({
-    id: 'Sat Oct 23 2021 14:49:14 GMT+0000', // optional
+    id: 'Fri Jan 21 2022 15:38:54 GMT+0000', // optional
     owner: "jasongao1995",
     repo: "comment.git",
     oauth: {
@@ -456,7 +457,7 @@ const gitment = new Gitment({
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#微服务搭建"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">微服务搭建</span></a></li></ol>
+          <ol class="nav">none</ol>
         
         </div>
       </aside>
