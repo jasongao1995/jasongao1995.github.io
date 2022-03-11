@@ -263,11 +263,19 @@
                 post-container">
 
                 <h3 id="IO笔记"><a href="#IO笔记" class="headerlink" title="IO笔记"></a>IO笔记</h3><p>UNIX 系统下 IO 模型5种 (同步阻塞IO,同步非阻塞IO,IO多路复用,信号驱动IO,异步IO)<br>java 三种IO模型<br>BIO:同步阻塞IO,应用程序发起read操作后,内核空间直到将数据拷贝到用户空间前,一直处于阻塞状态<br>NIO:多路复用IO,java中通过选择器一个线程管理多个客户端的连接<br>AIO:异步IO模型,基于事件和回调机制</p>
+<h3 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h3><p><em>引入缓存带来的问题</em><br>1.系统复杂性增加</p>
+<ol>
+<li>系统开发成本增加</li>
+</ol>
 
                 
                 <hr>
                 <!-- Pager -->
                 <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2022/03/08/Redis/" data-toggle="tooltip" data-placement="top" title="Redis">&larr; Previous Post</a>
+                    </li>
                     
                     
                     <li class="next">
@@ -453,7 +461,7 @@ const gitment = new Gitment({
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#IO笔记"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">IO笔记</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#IO笔记"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">IO笔记</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#缓存"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">缓存</span></a></li></ol>
         
         </div>
       </aside>
